@@ -2,7 +2,7 @@ import { Disclosure } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "../assets/Logo.svg";
 import Bars from "../assets/hamburger-icon.svg";
-import { NavLink, Link, useParams } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import cart from "../assets/shopping-bag.svg";
 import profile from "../assets/user.svg";
 import search from "../assets/search.svg";
@@ -22,17 +22,11 @@ function classNames(...classes) {
 export default function Navbar() {
   const [sectionId, setSectionId] = useState("#footwear");
 
-  let { id } = useParams();
-
-  useEffect(() => {
-    id && setSectionId(id);
-  }, [id]);
-
   return (
     <Disclosure as="nav" className="bg-grey">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8 ">
+          <div className="mx-auto max-w-[1126px] px-2 ">
             <div className="relative flex h-16 items-center justify-between">
               {/* Logo */}
               <div>
@@ -40,16 +34,17 @@ export default function Navbar() {
               </div>
 
               {/* Navigation Links */}
-              <div className="hidden lg:flex flex-row gap-12 text-lg tracking-wide">
+              <div className="hidden lg:flex flex-row gap-12 text-[18px] leading-[32px]">
                 {navigation.map((nav, index) => (
                   <NavLink
                     key={index}
                     to={nav.href}
-                    className={`flex flex-col justify-center items-center ${
-                      sectionId === nav.href && "text-pink"
-                    }`}
+                    className="flex flex-col justify-center items-center text-midnight"
+                    onClick={() => setSectionId(nav.href)}
                   >
-                    <p>{nav.name}</p>
+                    <p className={`${sectionId === nav.href && "text-pink"}`}>
+                      {nav.name}
+                    </p>
                     {sectionId === nav.href && (
                       <span className="absolute mt-8 h-[8px] w-[8px] bg-pink rounded-full"></span>
                     )}

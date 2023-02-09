@@ -5,8 +5,10 @@ module.exports = {
     colors: {
       grey: " #F5F5F5",
       pink: "#FF3C78",
-      midnight: "#121063",
-      metal: "#565584",
+      midnight: "#0A083A",
+      gray: "#6C6B6B",
+      white: "#fff",
+      blue: "#315BFF",
       tahiti: "#3ab7bf",
       silver: "#ecebff",
       "bubble-gum": "#ff77e9",
@@ -14,6 +16,11 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Work Sans", "sans-serif"],
+    },
+    boxShadow: {
+      "3xl": "0 10px 30px -10px #FF3C78",
+      "2xl": "0 10px 30px -10px #315BFF",
+      "1xl": "0 10px 30px -25px #315BFF",
     },
     extend: {},
   },
