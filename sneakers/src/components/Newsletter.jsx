@@ -3,15 +3,15 @@ import twitter from "../assets/twitter-blue.svg";
 import facebook from "../assets/facebook-blue.svg";
 import instagram from "../assets/instagram-blue.svg";
 import { Link } from "react-router-dom";
-import sneaker from "../assets/sneaker-white.png";
-import round from "../assets/round.svg";
+import sneaker from "../assets/sneaker-white.svg";
+import sneaker2 from "../assets/sneaker-white-2.svg";
 
 const Newsletter = () => {
   return (
     <div className="max-w-[1440px] mx-auto">
       <div className="max-w-[1280px] mr-auto bg-gradient-to-r from-harbor to-blue rounded-r-[24px]">
-        <div className="flex flex-col items-center md:flex-row ml-auto max-w-[1126px] px-2 py-[32px] md:py-[72px] xl:py-[90px] text-white">
-          <div className="flex flex-col gap-[32px] md:gap-[72px] xl:gap-[90px] md:w-1/2">
+        <div className="flex flex-col items-center md:flex-row ml-auto max-w-[1126px] px-2 py-[32px] md:py-[60px] text-white">
+          <div className="flex flex-col gap-[32px] md:gap-[72px] xl:gap-[90px] md:w-1/2 px-[40px] md:px-0">
             <h2 className="text-center md:text-left md:max-w-[500px] text-[32px] leading-[40px] md:text-[48px] md:leading-[56px] font-bold tracking-tight">
               Subscribe now to get the latest updates
             </h2>
@@ -49,14 +49,9 @@ const Newsletter = () => {
                 <img src={instagram} />
               </Link>
             </div>
-            <div className="w-[400px] h-[400px] bg-[url('src/assets/sneaker-white.png')]">
-              {/* <img
-                src={sneaker}
-                className="md:absolute z-10 md:ml-14 md:mt-6 xl:ml-14 xl:mt-2"
-              />
-              <div className="md:absolute z-1 md:mt-[150px] md:ml-[220px] xl:mt-[100px]">
-                <img src={round} />
-              </div> */}
+            <div className="">
+              <img src={sneaker} className="hidden lg:block" />
+              <img src={sneaker2} className="block lg:hidden -mt-20 md:mt-0" />
             </div>
           </div>
         </div>
