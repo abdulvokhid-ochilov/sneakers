@@ -6,7 +6,7 @@ import HeroSlider from "./common/HeroSlider";
 
 const Hero = () => {
   return (
-    <div className="bg-grey">
+    <div className="bg-grey max-w-[1440px] mx-auto">
       <div className="mx-auto max-w-[1126px] pl-2 ">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col gap-[32px] md:gap-[48px] md:mt-[80px] md:w-2/5 pr-2 md:pr-0">

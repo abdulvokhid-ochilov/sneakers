@@ -3,14 +3,13 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      grey: " #F5F5F5",
+      grey: "#F5F5F5",
       pink: "#FF3C78",
       midnight: "#0A083A",
       gray: "#6C6B6B",
       white: "#fff",
       blue: "#315BFF",
-      tahiti: "#3ab7bf",
-      silver: "#ecebff",
+      harbor: "#8AA8F8",
       "bubble-gum": "#ff77e9",
       bermuda: "#78dcca",
     },
