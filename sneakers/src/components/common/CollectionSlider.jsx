@@ -22,7 +22,7 @@ export default function CollectionSlider() {
 
   return (
     <>
-      <div className="min-w-[1024px]">
+      <div className="min-w-[1124px]">
         <Swiper
           slidesPerView={3}
           spaceBetween={24}

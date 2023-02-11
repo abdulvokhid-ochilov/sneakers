@@ -8,6 +8,14 @@ import up from "../assets/up.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const handleClickScroll = () => {
+    const element = document.getElementById("header");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="max-w-[1440px] mx-auto text-gray text-[16px] leading-[24px] bg-white pt-[80px] ">
       <div className="mx-auto max-w-[1126px] px-2 ">
@@ -102,7 +110,7 @@ const Footer = () => {
           <p className="grow text-center lg:text-left lg:flex-none">
             &#169; {new Date().getFullYear} Made with love for Brightscout
           </p>
-          <Link to="#footwear">
+          <Link to="/" onClick={handleClickScroll}>
             <img src={up} />
           </Link>
         </div>

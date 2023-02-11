@@ -23,7 +23,7 @@ export default function Navbar() {
   const [sectionId, setSectionId] = useState("#footwear");
 
   return (
-    <Disclosure as="nav" className="bg-grey max-w-[1440px] mx-auto">
+    <Disclosure as="nav" id="header" className="bg-grey max-w-[1440px] mx-auto">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-[1126px] px-2 ">
