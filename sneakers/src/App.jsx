@@ -8,6 +8,7 @@ import Collections from "./components/Collections";
 import PopularBrands from "./components/PopularBrands";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
+import OurShop from "./components/OurShop";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Accessories />
       <BestSeller />
       <NewArrivals />
+      <OurShop />
       <Collections />
       <PopularBrands />
       <Newsletter />

@@ -17,8 +17,10 @@ module.exports = {
       sans: ["Work Sans", "sans-serif"],
     },
     boxShadow: {
+      gr: "0 10px 30px -10px #02BE83",
+      md: "0 10px 30px -10px #0A083A",
       "3xl": "0 10px 30px -10px #FF3C78",
-      "2xl": "0 10px 30px -10px #315BFF",
+      bl: "0 10px 30px -10px #315BFF",
       "1xl": "0 10px 30px -25px #315BFF",
     },
     extend: {},

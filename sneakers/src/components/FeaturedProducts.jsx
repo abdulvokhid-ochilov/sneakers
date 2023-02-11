@@ -9,7 +9,7 @@ import rating from "../assets/Rating.svg";
 
 const FeaturedProducts = () => {
   return (
-    <div className="bg-white max-w-[1440px] mx-auto overflow-x-hidden pb-[144px] px-2">
+    <div className="bg-white max-w-[1440px] mx-auto overflow-x-hidden px-2">
       <div className="mx-auto max-w-[1126px] py-[64px] md:py-[120px] flex flex-col gap-[50px] md:gap-[90px]">
         <div className="flex flex-row md:justify-between md:items-center ">
           <h2 className="text-midnight text-[32px] leading-[40px] md:text-[48px] md:leading-[56px] font-bold tracking-tight mx-auto md:mx-0">
