@@ -2,3 +2,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-pagination-bullet {
+  margin: 0 !important;
+  border-radius: 8px !important;
+  width: 168px;
+  border-radius: 0 !important;
+  background-color: #ebebea !important;
+  height: 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+  margin: 0 !important;
+  background-color: #02be83 !important;
+  border-radius: 8px !important;
+}

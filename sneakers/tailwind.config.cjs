@@ -10,8 +10,8 @@ module.exports = {
       white: "#fff",
       blue: "#315BFF",
       harbor: "#8AA8F8",
-      "bubble-gum": "#ff77e9",
-      bermuda: "#78dcca",
+      orange: "#FE7831",
+      green: "#02BE83",
     },
     fontFamily: {
       sans: ["Work Sans", "sans-serif"],

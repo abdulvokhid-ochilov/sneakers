@@ -1,76 +1,137 @@
-import React from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import sneaker from "../../assets/sneaker.png";
+// import "swiper/css/pagination";
 
 // import required modules
-import { Parallax, FreeMode } from "swiper";
-import left from "../../assets/chevron-left.svg";
-import right from "../../assets/chevron-right.svg";
-import nike from "../../assets/nike.svg";
-import adidas from "../../assets/Adidas.svg";
-import balance from "../../assets/New balance.svg";
-import sportif from "../../assets/Le coq sportif.svg";
+import { Parallax, FreeMode, Pagination } from "swiper";
+import CollectionCard from "./CollectionCard";
+import col1 from "../../assets/col1.png";
+import col2 from "../../assets/col2.png";
+import col3 from "../../assets/col3.png";
+import ellipse1 from "../../assets/ellipse1.svg";
+import ellipse2 from "../../assets/ellipse2.svg";
+import ellipse3 from "../../assets/ellipse3.svg";
 
 export default function CollectionSlider() {
   const swiperRef = React.useRef(null);
+  const [index, setIndex] = useState(0);
 
   return (
     <>
-      <div className="min-w-[972px] h-[200px]">
+      <div className="min-w-[1024px]">
         <Swiper
-          slidesPerView={4}
+          slidesPerView={3}
           spaceBetween={24}
           speed={600}
           freeMode={true}
+          pagination={{
+            clickable: true,
+          }}
           parallax={true}
-          modules={[Parallax, FreeMode]}
+          modules={[Parallax, Pagination, FreeMode]}
           className="mySwiper"
           ref={swiperRef}
+          onSlideChange={(swiper) => {
+            setIndex(swiper.activeIndex);
+          }}
         >
           <SwiperSlide>
-            <img src={nike} alt="image slide 1" />
+            <CollectionCard
+              products="120"
+              product={col1}
+              img={ellipse1}
+              color="text-blue"
+              name="Sneakers"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={balance} alt="image slide 2" />
+            <CollectionCard
+              products="80"
+              product={col2}
+              img={ellipse2}
+              color="text-orange"
+              name="Football"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={adidas} alt="image slide 3" />
+            <CollectionCard
+              products="160"
+              product={col3}
+              img={ellipse3}
+              color="text-pink"
+              name="Volleyball"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={sportif} alt="image slide 4" />
+            <CollectionCard
+              products="120"
+              product={col1}
+              img={ellipse1}
+              color="text-blue"
+              name="Sneakers"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={nike} alt="image slide 5" />
+            <CollectionCard
+              products="80"
+              product={col2}
+              img={ellipse2}
+              color="text-orange"
+              name="Football"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={balance} alt="image slide 6" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={adidas} alt="image slide 7" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={sportif} alt="image slide 8" />
+            <CollectionCard
+              products="160"
+              product={col3}
+              img={ellipse3}
+              color="text-pink"
+              name="Volleyball"
+            />
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="flex gap-[22px] justify-center mt-[60px]">
+      <div className="flex justify-center bg-grey rounded-[8px] max-w-[661px] mx-auto ">
         <button
-          id="previousButton"
-          onClick={() => swiperRef.current.swiper.slidePrev()}
-        >
-          <img src={left} className="fill-blue" />
-        </button>
-
+          className={`w-1/4 h-[6px] ${
+            index === 0 && "bg-green"
+          }  rounded-[8px]`}
+          onClick={() => {
+            setIndex(0);
+            swiperRef.current.swiper.slideTo(0);
+          }}
+        ></button>
         <button
-          id="nextButton"
-          onClick={() => swiperRef.current.swiper.slideNext()}
-        >
-          <img src={right} className="fill-blue" />
-        </button>
+          className={`w-1/4 h-[6px] ${
+            index === 1 && "bg-green"
+          }  rounded-[8px]`}
+          onClick={() => {
+            setIndex(1);
+            swiperRef.current.swiper.slideTo(1);
+          }}
+        ></button>
+        <button
+          className={`w-1/4 h-[6px] ${
+            index === 2 && "bg-green"
+          }  rounded-[8px]`}
+          onClick={() => {
+            setIndex(2);
+            swiperRef.current.swiper.slideTo(2);
+          }}
+        ></button>
+        <button
+          className={`w-1/4 h-[6px] ${
+            index === 3 && "bg-green"
+          }  rounded-[8px]`}
+          onClick={() => {
+            setIndex(3);
+            swiperRef.current.swiper.slideTo(3);
+          }}
+        ></button>
       </div>
     </>
   );
