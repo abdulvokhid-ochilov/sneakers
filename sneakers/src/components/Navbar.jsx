@@ -1,11 +1,11 @@
 import { Disclosure } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import Logo from "/assets/Logo.svg";
-import Bars from "/assets/hamburger-icon.svg";
+import Logo from "/Logo.svg";
+import Bars from "/hamburger-icon.svg";
 import { NavLink, Link } from "react-router-dom";
-import cart from "/assets/shopping-bag.svg";
-import profile from "/assets/user.svg";
-import search from "/assets/search.svg";
+import cart from "/shopping-bag.svg";
+import profile from "/user.svg";
+import search from "/search.svg";
 import { useState } from "react";
 
 const navigation = [

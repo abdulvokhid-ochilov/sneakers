@@ -1,10 +1,10 @@
 import React from "react";
 
-import logo from "/assets/Logo.svg";
-import twitter from "/assets/twitter.svg";
-import facebook from "/assets/facebook.svg";
-import instagram from "/assets/instagram.svg";
-import up from "/assets/Up.svg";
+import logo from "/Logo.svg";
+import twitter from "/twitter.svg";
+import facebook from "/facebook.svg";
+import instagram from "/instagram.svg";
+import up from "/Up.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

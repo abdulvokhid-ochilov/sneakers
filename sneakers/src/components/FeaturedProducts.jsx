@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import FeaturedProductsSlider from "./common/FeaturedProductsSlider";
 import ProductCard from "./common/ProductCard";
-import prod1 from "/assets/prod1.svg";
-import prod2 from "/assets/prod2.svg";
-import prod3 from "/assets/prod3.svg";
-import rating from "/assets/Rating.svg";
+import prod1 from "/prod1.svg";
+import prod2 from "/prod2.svg";
+import prod3 from "/prod3.svg";
+import rating from "/Rating.svg";
 
 const FeaturedProducts = () => {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
-import twitter from "/assets/twitter-blue.svg";
-import facebook from "/assets/facebook-blue.svg";
-import instagram from "/assets/instagram-blue.svg";
+import twitter from "/twitter-blue.svg";
+import facebook from "/facebook-blue.svg";
+import instagram from "/instagram-blue.svg";
 import { Link } from "react-router-dom";
-import sneaker from "/assets/sneaker-white.svg";
-import sneaker2 from "/assets/sneaker-white-2.svg";
+import sneaker from "/sneaker-white.svg";
+import sneaker2 from "/sneaker-white-2.svg";
 
 const Newsletter = () => {
   return (
@@ -19,7 +19,7 @@ const Newsletter = () => {
               <input
                 placeholder="Enter you email"
                 type="email"
-                className="h-1/2 py-3 md:py-7 rounded-t-[24px] ../public/"
+                className="h-1/2 py-3 md:py-7 rounded-t-[24px] placeholder:text-center text-midnight text-center"
               />
               <button className="text-[14px] md:text-[18px] font-semibold leading-[17px] md:leading-[32px] bg-blue h-1/2 py-3 md:py-7 rounded-b-[24px]">
                 SUBSCRIBE

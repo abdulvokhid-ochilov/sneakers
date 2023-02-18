@@ -4,12 +4,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { Parallax, FreeMode } from "swiper";
-import left from "/assets/chevron-left.svg";
-import right from "/assets/chevron-right.svg";
-import nike from "/assets/Nike.svg";
-import adidas from "/assets/adidas.svg";
-import balance from "/assets/New balance.svg";
-import sportif from "/assets/Le coq sportif.svg";
+import left from "/chevron-left.svg";
+import right from "/chevron-right.svg";
+import nike from "/Nike.svg";
+import adidas from "/adidas.svg";
+import balance from "/New balance.svg";
+import sportif from "/Le coq sportif.svg";
 
 export default function BrandsSlider() {
   const swiperRef = React.useRef(null);

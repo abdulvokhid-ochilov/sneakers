@@ -5,10 +5,10 @@ import "swiper/css/navigation";
 
 import { Parallax, FreeMode, Pagination } from "swiper";
 import ProductCard from "./ProductCard";
-import prod1 from "/assets/prod1.svg";
-import prod2 from "/assets/prod2.svg";
-import prod3 from "/assets/prod3.svg";
-import rating from "/assets/Rating.svg";
+import prod1 from "/prod1.svg";
+import prod2 from "/prod2.svg";
+import prod3 from "/prod3.svg";
+import rating from "/Rating.svg";
 
 export default function FeaturedProductsSlider() {
   const swiperRef = React.useRef(null);

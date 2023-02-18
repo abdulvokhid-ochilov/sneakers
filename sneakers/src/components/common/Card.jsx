@@ -1,6 +1,6 @@
 import React from "react";
-import lock from "/assets/lock.svg";
-import person from "/assets/person.jpg";
+import lock from "/lock.svg";
+import person from "/person.jpg";
 
 const Card = () => {
   return (

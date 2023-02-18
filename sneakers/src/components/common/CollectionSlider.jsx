@@ -5,12 +5,12 @@ import "swiper/css/navigation";
 
 import { Parallax, FreeMode, Pagination } from "swiper";
 import CollectionCard from "./CollectionCard";
-import col1 from "/assets/col1.png";
-import col2 from "/assets/col2.png";
-import col3 from "/assets/col3.png";
-import ellipse1 from "/assets/Ellipse1.svg";
-import ellipse2 from "/assets/Ellipse2.svg";
-import ellipse3 from "/assets/Ellipse3.svg";
+import col1 from "/col1.png";
+import col2 from "/col2.png";
+import col3 from "/col3.png";
+import ellipse1 from "/Ellipse1.svg";
+import ellipse2 from "/Ellipse2.svg";
+import ellipse3 from "/Ellipse3.svg";
 
 export default function CollectionSlider() {
   const swiperRef = React.useRef(null);

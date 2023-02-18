@@ -1,9 +1,9 @@
 import React from "react";
-import car from "/assets/Car.svg";
-import support from "/assets/support.svg";
-import quality from "/assets/Quality.svg";
-import price from "/assets/Wallet.svg";
-import shop from "/assets/shop.svg";
+import car from "/Car.svg";
+import support from "/support.svg";
+import quality from "/Quality.svg";
+import price from "/Wallet.svg";
+import shop from "/shop.svg";
 
 const OurShop = () => {
   return (
