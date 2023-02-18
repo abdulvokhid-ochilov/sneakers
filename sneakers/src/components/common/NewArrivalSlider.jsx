@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import shoes from "../../../public/assets/new-shoes.svg";
+import shoes from "/assets/new-shoes.svg";
 
 import { Parallax, FreeMode, Pagination } from "swiper";
 import NewArrivalCard from "./NewArrivalCard";
-import rating from "../../../public/assets/Rating.svg";
+import rating from "/assets/Rating.svg";
 
 export default function NewArrivalSlider() {
   const swiperRef = React.useRef(null);

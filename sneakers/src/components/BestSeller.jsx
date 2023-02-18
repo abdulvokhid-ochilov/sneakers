@@ -1,7 +1,7 @@
 import React from "react";
 import Toggle from "./common/Toggle";
-import bestSeller from "../../public/assets/best-seller.png";
-import top from "../../public/assets/top.svg";
+import bestSeller from "/assets/best-seller.png";
+import top from "/assets/top.svg";
 import Button from "./common/Button";
 
 const BestSeller = () => {

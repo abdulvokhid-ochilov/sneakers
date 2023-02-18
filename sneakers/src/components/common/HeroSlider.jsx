@@ -2,12 +2,12 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import sneaker from "../../../public/assets/sneaker.png";
+import sneaker from "/assets/sneaker.png";
 
 import { Parallax } from "swiper";
-import back from "../../../public/assets/hero-back.png";
-import left from "../../../public/assets/arrow-left-circle.svg";
-import right from "../../../public/assets/arrow-right-circle.svg";
+import back from "/assets/hero-back.png";
+import left from "/assets/arrow-left-circle.svg";
+import right from "/assets/arrow-right-circle.svg";
 import Card from "./Card";
 
 export default function HeroSlider() {

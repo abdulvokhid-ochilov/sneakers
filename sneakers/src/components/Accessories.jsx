@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../components/common/Button";
-import ball from "../../public/assets/ball.png";
-import shirt from "../../public/assets/shirt.svg";
+import ball from "/assets/ball.png";
+import shirt from "/assets/shirt.svg";
 
 const Accessories = () => {
   return (

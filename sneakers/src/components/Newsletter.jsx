@@ -1,10 +1,10 @@
 import React from "react";
-import twitter from "../../public/assets/twitter-blue.svg";
-import facebook from "../../public/assets/facebook-blue.svg";
-import instagram from "../../public/assets/instagram-blue.svg";
+import twitter from "/assets/twitter-blue.svg";
+import facebook from "/assets/facebook-blue.svg";
+import instagram from "/assets/instagram-blue.svg";
 import { Link } from "react-router-dom";
-import sneaker from "../../public/assets/sneaker-white.svg";
-import sneaker2 from "../../public/assets/sneaker-white-2.svg";
+import sneaker from "/assets/sneaker-white.svg";
+import sneaker2 from "/assets/sneaker-white-2.svg";
 
 const Newsletter = () => {
   return (
