@@ -1,19 +1,15 @@
 import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import sneaker from "../../assets/sneaker.png";
 
-// import required modules
 import { Parallax, FreeMode } from "swiper";
-import left from "../../assets/chevron-left.svg";
-import right from "../../assets/chevron-right.svg";
-import nike from "../../assets/nike.svg";
-import adidas from "../../assets/Adidas.svg";
-import balance from "../../assets/New balance.svg";
-import sportif from "../../assets/Le coq sportif.svg";
+import left from "../../../public/assets/chevron-left.svg";
+import right from "../../../public/assets/chevron-right.svg";
+import nike from "../../../public/assets/nike.svg";
+import adidas from "../../../public/assets/Adidas.svg";
+import balance from "../../../public/assets/New balance.svg";
+import sportif from "../../../public/assets/Le coq sportif.svg";
 
 export default function BrandsSlider() {
   const swiperRef = React.useRef(null);

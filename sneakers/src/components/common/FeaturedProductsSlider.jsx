@@ -1,18 +1,14 @@
 import React, { useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-// import "swiper/css/pagination";
 
-// import required modules
 import { Parallax, FreeMode, Pagination } from "swiper";
 import ProductCard from "./ProductCard";
-import prod1 from "../../assets/prod1.svg";
-import prod2 from "../../assets/prod2.svg";
-import prod3 from "../../assets/prod3.svg";
-import rating from "../../assets/Rating.svg";
+import prod1 from "../../../public/assets/prod1.svg";
+import prod2 from "../../../public/assets/prod2.svg";
+import prod3 from "../../../public/assets/prod3.svg";
+import rating from "../../../public/assets/Rating.svg";
 
 export default function FeaturedProductsSlider() {
   const swiperRef = React.useRef(null);

@@ -1,20 +1,16 @@
 import React from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import sneaker from "../../assets/sneaker.png";
+import sneaker from "../../../public/assets/sneaker.png";
 
-// import required modules
 import { Parallax } from "swiper";
-import back from "../../assets/hero-back.png";
-import left from "../../assets/arrow-left-circle.svg";
-import right from "../../assets/arrow-right-circle.svg";
+import back from "../../../public/assets/hero-back.png";
+import left from "../../../public/assets/arrow-left-circle.svg";
+import right from "../../../public/assets/arrow-right-circle.svg";
 import Card from "./Card";
 
 export default function HeroSlider() {
-  const swiper = useSwiper();
   const swiperRef = React.useRef(null);
 
   return (

@@ -1,20 +1,16 @@
 import React, { useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-// import "swiper/css/pagination";
 
-// import required modules
 import { Parallax, FreeMode, Pagination } from "swiper";
 import CollectionCard from "./CollectionCard";
-import col1 from "../../assets/col1.png";
-import col2 from "../../assets/col2.png";
-import col3 from "../../assets/col3.png";
-import ellipse1 from "../../assets/ellipse1.svg";
-import ellipse2 from "../../assets/ellipse2.svg";
-import ellipse3 from "../../assets/ellipse3.svg";
+import col1 from "../../../public/assets/col1.png";
+import col2 from "../../../public/assets/col2.png";
+import col3 from "../../../public/assets/col3.png";
+import ellipse1 from "../../../public/assets/ellipse1.svg";
+import ellipse2 from "../../../public/assets/ellipse2.svg";
+import ellipse3 from "../../../public/assets/ellipse3.svg";
 
 export default function CollectionSlider() {
   const swiperRef = React.useRef(null);

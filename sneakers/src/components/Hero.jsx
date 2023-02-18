@@ -1,6 +1,6 @@
 import React from "react";
-import favorite from "../assets/favorite.svg";
-import tick from "../assets/Group 4.svg";
+import favorite from "../../public/assets/favorite.svg";
+import tick from "../../public/assets/Group 4.svg";
 import Button from "./common/Button";
 import HeroSlider from "./common/HeroSlider";
 
